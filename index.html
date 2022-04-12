@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Ubuntu:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <!-- header area -->
+    <header class="header">
+    <!-- navbar -->
+    <nav class="navbar-brand nav">
+        <ul class="nav__list--items">
+            <span>
+            <li class="nav__list--item brand">
+                <img src="/images/navigation-bar/Spotify-Icon-Logo.wine.png" alt="Music Player Logo" class="nav__logo--img">
+                &nbsp;&nbsp; &nbsp;Harshu's Music
+            </li>
+
+            <li class="nav__list--item">
+                <p class="nav__div--liked">
+                    &#10084;&#65039; Liked Songs
+                </p>
+            </li>
+            </span>
+
+            <span>
+            <li class="nav__list--item">
+                <div class="nav__div--search-bar search">
+                    <!-- <div>
+                        <i class="fas fa-search search-ico"></i>
+                    <input type="text" name="search" placeholder="Search">
+                        <i class="fas fa-microphone mic-ico"></i>
+                </div> -->
+                <form class="div__forum--search-bar" action="#">
+                    <input class="search-bar" type="text" placeholder="Search..." name="search">
+                    <button id="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+            </li>
+
+            <li class="nav__list--item">
+                <div class="nav__div--notification-panel notification-center">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </li>
+
+            <li class="nav__list--item">
+                <img src="images/navigation-bar/Harsh-in-red.jpg" alt="Profile" class="nav__profile--img">
+            </li>
+            </span>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- main area -->
+    <main class="main">
+        <div class="container-main-body">
+        <section class="container">
+
+            <!-- carousel/slider -->
+            <div aria-label="Newest Photos" class="div__container div__container--carousel">
+
+                <div class="carousel">
+                  <button class="carousel__button carousel__button--left is-hidden">
+                    <img src="/images/carousel/left-arrow-svgrepo-com(1).svg" alt="">
+                  </button>
+
+                  <div class="carousel__track-container">
+                      <ul class="carousel__track">
+                        <li class="carousel-cards carousel__slide current-slide">
+                            <a href="#" class="man-mera">
+                                <img src="/images/carousel/man_mera.jpg" alt="man-mera" class="carousel__img">
+                            </a>
+                        </li>
+
+                        <li class="carousel-cards carousel__slide">
+                            <a href="#" class="tera-hi-rahun">
+                                <img src="/images/carousel/tera-hi-rahun.jpg" alt="tera-hi-rahun" class="carousel__img">
+                            </a>
+                        </li>
+
+                        <li class="carousel-cards carousel__slide">
+                            <a href="#" class="anjaam">
+                                <img src="/images/carousel/anjaam.jpg" alt="anjaam" class="carousel__img">
+                            </a>
+                        </li>       
+                      </ul>
+                  </div>
+
+                  <button class="carousel__button carousel__button--right">
+                    <img src="/images/carousel/right-arrow-svgrepo-com.svg" alt=""> 
+                  </button>
+
+                  <div class="carousel__nav">
+                      <button class="carousel__indicator current-slide"></button>
+                      <button class="carousel__indicator"></button>
+                      <button class="carousel__indicator"></button>
+                  </div>
+                </div>
+            </div>
+
+        <div class="container-latest-release">
+            <!-- latest release -->
+            <div class="div__container latest-release">
+                <h3 class="main-title songs__main--title">
+                    Latest Release
+                </h3>
+                <section id="latest-release-items">
+                    <!-- fist item -->
+                    <div class="latest-release__item">
+                        <a href="#" class="latest__release--link">
+
+                            <div class="content">
+                                <div class="latest-release__img--container">
+                                    <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="ali sethi pasoori" class="latest-release__img">
+                                </div>
+                                <div class="latest-release__content--info">
+                                    <h4 class="latest-release__title">
+                                        Pasoori
+                                    </h4>
+                                    <p class="latest-date">
+                                        Date Of Release
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="content-column">
+                                <i class="fa fa-thin fa-ellipsis"></i>
+                                <p class="latest-release__song--length">4:30</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- second item -->
+                    <div class="latest-release__item">
+                        <a href="#" class="latest__release--link">
+
+                            <div class="content">
+                                <div class="latest-release__img--container">
+                                    <img src="/images/latest-release/anuv-jian.jpg" alt="anuv jain baarishein" class="latest-release__img">
+                                </div>
+                                <div class="latest-release__content--info">
+                                    <h4 class="latest-release__title">Baarishein</h4>
+                                    <p class="latest-date">Date Of Release</p>
+                                </div>
+                            </div>
+                            
+                            <div class="content-column">
+                                <i class="fa fa-thin fa-ellipsis"></i>
+                                <p class="latest-release__song--length">4:30</p>
+                            </div>
+                        </a>
+                        </div>
+                        
+                        <!-- third item -->
+                        <div class="latest-release__item">
+                        <a href="#" class="latest__release--link">
+
+                            <div class="content">
+                                <div class="latest-release__img--container">
+                                    <img src="/images/latest-release/anuv-jian.jpg" alt="anuv jain baarishein" class="latest-release__img">
+                                </div>
+                                <div class="latest-release__content--info">
+                                    <h4 class="latest-release__title">Baarishein</h4>
+                                    <p class="latest-date">Date Of Release</p>
+                                </div>
+                            </div>
+                            
+                            <div class="content-column">
+                                <i class="fa fa-thin fa-ellipsis"></i>
+                                <p class="latest-release__song--length">4:30</p>
+                            </div>
+                        </a>
+                        </div>
+                        
+                        <!-- fourth item -->
+                        <div class="latest-release__item">
+                        <a href="#" class="latest__release--link">
+
+                            <div class="content">
+                                <div class="latest-release__img--container">
+                                    <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="ali sethi pasoori" class="latest-release__img">
+                                </div>
+                                <div class="latest-release__content--info">
+                                    <h4 class="latest-release__title">Pasoori</h4>
+                                    <p class="latest-date">Date Of Release</p>
+                                </div>
+                            </div>
+                            
+                            <div class="content-column">
+                                <i class="fa fa-thin fa-ellipsis"></i>
+                                <p class="latest-release__song--length">4:30</p>
+                            </div>
+                        </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Popular Artists -->
+            <div class="div__container">
+                <h3 class="main-title songs__main--title">Popular Artists</h3>
+
+                <ul class="popular__artist--items">
+                    <li class="popular__artist--item">
+                        <a href="#" class="popular__artist--link">
+                            <img src="/images/popular-artists/arijit.jpg" alt="Arijit Singh" class="popular__artist--img">
+                            <h5 class="popular__artist--title">Arijit Singh</h5>
+                        </a>
+                    </li>
+
+                    <li class="popular__artist--item">
+                        <a href="#" class="popular__artist--link">
+                            <img src="/images/popular-artists/armanmallik.jpg" alt="Arman Mallik" class="popular__artist--img">
+                            <h5 class="popular__artist--title">Arman Mallik</h5>
+                        </a>
+                    </li>
+
+                    <li class="popular__artist--item">
+                        <a href="#" class="popular__artist--link">
+                            <img src="/images/popular-artists/aseskaur.jpg" alt="Ases Kaur" class="popular__artist--img">
+                            <h5 class="popular__artist--title">Ases Kaur</h5>
+                        </a>
+                    </li>
+
+                    <li class="popular__artist--item">
+                        <a href="#" class="popular__artist--link">
+                            <img src="/images/popular-artists/atif.jpg" alt="Atif Aslam" class="popular__artist--img">
+                            <h5 class="popular__artist--title">Atif Aslam</h5>
+                        </a>
+                    </li>
+
+                    <li class="popular__artist--item">
+                        <a href="#" class="popular__artist--link">
+                            <img src="/images/popular-artists/jubin.jpg" alt="Jubin Nautiyal" class="popular__artist--img">
+                            <h5 class="popular__artist--title">Jubin Nautiyal</h5>
+                        </a>
+                    </li>
+
+                    <li class="popular__artist--item">
+                        <a href="#" class="popular__artist--link">
+                            <img src="/images/popular-artists/mithoon.jpg" alt="Mithoon" class="popular__artist--img">
+                            <h5 class="popular__artist--title">Mithoon</h5>
+                        </a>
+                    </li>
+
+                    <li class="popular__artist--item">
+                        <a href="#" class="popular__artist--link">
+                            <img src="/images/popular-artists/sachettondon.jpg" alt="Sachet Tondon" class="popular__artist--img">
+                            <h5 class="popular__artist--title">Sachet Tondon</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="div__container moods-and-genre">
+                <div class="flex-row baseline-text">
+                    <h3 class="moods__main--title">
+                        Moods & Genres
+                    </h3>
+                    <a href="#" class="moods-and-genre-link">More</a>
+                </div>
+
+                <div class="flex-row moods__main--content">
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Ghazal/Sufi
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Workout
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Romance
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Feel Good
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Party
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Pop
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Summer Vibes
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            1900s
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            2000s
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            2010s
+                        </a>
+                    </span>
+
+                    <span class="mood-item">
+                        <a href="#" class="mood-link">
+                            Sleep
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- sounds of India -->
+            <div class="div__container">
+                <h3 class="main-title sounds-of-india__main--title">
+                    Sounds Of India
+                </h3>
+
+                <ul class="sounds-of-india__main--items">
+                    <!-- sounds of Mumbai -->
+                    <li class="sounds-of-india__main--item">
+                        <a href="#" class="sounds-of-india-link">
+                            <img src="/images/sounds-of-india/mumbai.jpeg" alt="Sounds of Mumbai" class="sounds-of-india-img">
+                            <h4 class="sounds-of-india__content--title">
+                                Sounds of Mumbai
+                            </h4>
+                            <p class="sounds-of-india__content">
+                                The songs that define, unite and distinguish Mumbai IN, according to listening patterns and math. See also 
+                            </p>
+                        </a>
+                    </li>
+
+                    <!-- sounds of kolkata -->
+                    <li class="sounds-of-india__main--item">
+                        <a href="#" class="sounds-of-india-link">
+                            <img src="/images/sounds-of-india/kolkata.jpeg" alt="Sounds of Kolkata" class="sounds-of-india-img">
+                            <h4 class="sounds-of-india__content--title">
+                                Sounds of Kolkata
+                            </h4>
+                            <p class="sounds-of-india__content">
+                                The songs that define, unite and distinguish Mumbai IN, according to listening patterns and math. See also 
+                            </p>
+                        </a>
+                    </li>
+
+                    <!-- sounds of Delhi -->
+                    <li class="sounds-of-india__main--item">
+                        <a href="#" class="sounds-of-india-link">
+                            <img src="/images/sounds-of-india/delhi.jpeg" alt="Sounds of Delhi" class="sounds-of-india-img">
+                            <h4 class="sounds-of-india__content--title">
+                                Sounds of Delhi
+                            </h4>
+                            <p class="sounds-of-india__content">
+                                The songs that define, unite and distinguish Mumbai IN, according to listening patterns and math. See also 
+                            </p>
+                        </a>
+                    </li>
+
+                    <!-- sounds of Bengaluru -->
+                    <li class="sounds-of-india__main--item">
+                        <a href="#" class="sounds-of-india-link">
+                            <img src="/images/sounds-of-india/bengaluru.jpeg" alt="Sounds of Bengaluru" class="sounds-of-india-img">
+                            <h4 class="sounds-of-india__content--title">
+                                Sounds of Bengaluru
+                            </h4>
+                            <p class="sounds-of-india__content">
+                                The songs that define, unite and distinguish Mumbai IN, according to listening patterns and math. See also 
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Latest Hindi Release -->
+            <div class="div__container">
+                <h3 class="main-title latest-hindi-songs__main--title">
+                    Latest Hindi Release
+                </h3>
+
+                <ul class="latest-hindi-songs__main--items">
+                    <li class="latest-hindi-songs__main--item">
+                        <a href="#" class="latest-hindi-songs-link">
+                            <img src="/images/latest-hindi/Tere Naam.jpeg" alt="Tere Naam" class="latest-hindi-songs-img">
+                            <h4 class="latest-hindi-songs__content--title">
+                                Tere Naam
+                            </h4>
+                            <p class="latest-hindi-songs__content">
+                                Darshan Raval, Tulsi Kumar...
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="latest-hindi-songs__main--item">
+                        <a href="#" class="latest-hindi-songs-link">
+                            <img src="/images/latest-hindi/Dil Galati Kar Baitha Hai.jpeg" alt="Dil Galti Kar Baitha Hai" class="latest-hindi-songs-img">
+                            <h4 class="latest-hindi-songs__content--title">
+                                Dil Galti Kar Baitha Hai
+                            </h4>
+                            <p class="latest-hindi-songs__content">
+                                Jubin Nautiyal, Meet Bros
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="latest-hindi-songs__main--item">
+                        <a href="#" class="latest-hindi-songs-link">
+                            <img src="/images/latest-hindi/Mehendi Lagi.jpeg" alt="Mehendi Lagi" class="latest-hindi-songs-img">
+                            <h4 class="latest-hindi-songs__content--title">
+                                Mehendi Lagi
+                            </h4>
+                            <p class="latest-hindi-songs__content">
+                                Stebin Ben, Nilesh Ahuja
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="latest-hindi-songs__main--item">
+                        <a href="#" class="latest-hindi-songs-link">
+                            <img src="/images/latest-hindi/Rashmi Rocket.jpeg" alt="Rashmi Rocket" class="latest-hindi-songs-img">
+                            <h4 class="latest-hindi-songs__content--title">
+                                Rashmi Rocket
+                            </h4>
+                            <p class="latest-hindi-songs__content">
+                                Amit Trivedi
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Latest English -->
+            <div class="div__container">
+                <h3 class="main-title latest-english-songs__main--title">
+                    Latest english Release
+                </h3>
+
+                <ul class="latest-english-songs__main--items">
+                    <li class="latest-english-songs__main--item">
+                        <a href="#" class="latest-english-songs-link">
+                            <img src="/images/latest-english/new-music-friday.jpeg" alt="New Music Friday" class="latest-english-songs-img">
+                            <h4 class="latest-english-songs__content--title">
+                                New Music Friday
+                            </h4>
+                            <p class="latest-english-songs__content">
+                                The very best in new music from around the world. Cover: Camila Cabello & WILLOW
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="latest-english-songs__main--item">
+                        <a href="#" class="latest-english-songs-link">
+                            <img src="/images/latest-english/dawn-fm.jpeg" alt="Dawn FM" class="latest-english-songs-img">
+                            <h4 class="latest-english-songs__content--title">
+                                Dawn FM
+                            </h4>
+                            <p class="latest-english-songs__content">
+                                The Weeknd
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="latest-english-songs__main--item">
+                        <a href="#" class="latest-english-songs-link">
+                            <img src="/images/latest-english/I-cant-love-you.jpeg" alt="If I Can’t Have Love, I Want Power" class="latest-english-songs-img">
+                            <h4 class="latest-english-songs__content--title">
+                                If I Can’t Have Love, I Want Power
+                            </h4>
+                            <p class="latest-english-songs__content">
+                                Halsey
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="latest-english-songs__main--item">
+                        <a href="#" class="latest-english-songs-link">
+                            <img src="/images/latest-english/dont-wake-me-up.jpeg" alt="Don't Wake Me Up" class="latest-english-songs-img">
+                            <h4 class="latest-english-songs__content--title">
+                                Don't Wake Me Up
+                            </h4>
+                            <p class="latest-english-songs__content">
+                                Jonas Blue, Why don't we
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-main-body">
+        <section class="container">
+            <div class="right-grid-list">
+                <h2 class="right-grid-title">Queue</h2>
+                
+            </div>
+
+            <ol class="right-grid-items">
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+
+                <li class="right-grid-item">
+                    1
+                </li>
+            </ol>
+        </section>
+    </div>
+
+    </main>
+
+    <!-- footer/music player -->
+    <footer class="footer">
+        <div class="music-container">
+            <!-- img of artist along with title -->
+            <div class="img-container">
+                <!-- img of music album -->
+                <img src="" alt="music cover" id="cover">
+            </div>
+
+            <div class="music-info">
+                <div class="music-info-flex">
+                    <div class="div__title">
+                        <h4 id="title">Tera Hi Rahun</h4>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="icons">
+                        <!-- GoogleFonts icons -->
+                        <button id="shuffle" class="action-btn">
+                            <i class="fas fa-regular fa-shuffle"></i>
+                        </button>
+        
+                        <button id="prev" class="action-btn">
+                            <i class="fa fa-2x fa-light fa-backward"></i>
+                        </button>
+        
+                        <button id="play" class="action-btn action-btn-big">
+                            <i class="fa fa-2x fa-regular fa-circle-play"></i>
+                        </button>
+        
+                        <button id="next" class="action-btn">
+                            <i class="fa fa-2x fa-light fa-forward"></i>
+                        </button>
+        
+                        <button id="repeat" class="action-btn">
+                            <i class="fas fa-regular fa-repeat"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress">
+            <input type="range" name="range" id="myProgressBar" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+
+        <div class="footer__container--volume-controller">
+            <button id="playlist" class="action-btn">
+                <i class="fa fa-thin fa-list"></i>
+            </button>
+
+            <button id="volume-control" class="action-btn">
+                <i class="fa fa-light fa-volume-high"></i>
+            </button>
+
+            <input type="range" id="volume-control">
+
+            <button id="full-screen" class="action-btn">
+                <i class="fa fa-thin fa-up-right-and-down-left-from-center"></i>
+            </button>
+        </div>
+    </div>
+
+    </footer>
+    
+    <script src="/js/carousel.js"></script>
+    <script src="https://kit.fontawesome.com/29fffc9bc7.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
