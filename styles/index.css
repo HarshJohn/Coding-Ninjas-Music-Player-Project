@@ -2,6 +2,7 @@
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
 }
 
     /* section container styling */
@@ -125,11 +126,21 @@
     display: none;
 }
 
+    /* click above to visit artist profile */
+.click-on-the-carousel-to-visit-artist-profile{margin-top: 7rem;}
+
+.click-above-link {
+    text-decoration: none;
+    color: white;
+}
+
     /* container latest release styling */
+#latest-release {
+    margin-top: -1em;
+}
+
 .container-latest-release {
-    margin-top: 6rem;
     margin-bottom: -8rem;
-    letter-spacing: 0px;
     font-size: small;
 }
 

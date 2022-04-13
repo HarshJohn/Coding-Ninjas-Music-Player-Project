@@ -27,6 +27,7 @@ body {
     /* navbar */
 .nav {
     position: fixed;
+    top: 0;
     background-color: black;
     width: 100%;
     padding: 1.5em;
@@ -40,6 +41,14 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+}
+
+.decor-none {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .brand {
