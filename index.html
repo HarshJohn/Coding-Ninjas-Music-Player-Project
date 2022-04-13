@@ -25,7 +25,7 @@
 
             <li class="nav__list--item">
                 <p class="nav__div--liked">
-                    &#10084;&#65039; Liked Songs
+                    Favourites &#10084;&#65039;
                 </p>
             </li>
             </span>
@@ -62,8 +62,9 @@
     <!-- main area -->
     <main class="main">
         <div class="container-main-body">
-        <section class="container">
 
+    <!-- grid area left side part -->
+        <section class="container">
             <!-- carousel/slider -->
             <div aria-label="Newest Photos" class="div__container div__container--carousel">
 
@@ -105,8 +106,9 @@
                   </div>
                 </div>
             </div>
-
-        <div class="container-latest-release">
+            
+            <section id="latest-release">
+            <div class="container-latest-release">
             <!-- latest release -->
             <div class="div__container latest-release">
                 <h3 class="main-title songs__main--title">
@@ -203,8 +205,10 @@
                     </section>
                 </div>
             </div>
+        </section>
 
             <!-- Popular Artists -->
+        <section id="popular-artists">
             <div class="div__container">
                 <h3 class="main-title songs__main--title">Popular Artists</h3>
 
@@ -259,7 +263,10 @@
                     </li>
                 </ul>
             </div>
+        </section>
 
+        <!-- music station -->
+        <section id="music-station">
             <div class="div__container moods-and-genre">
                 <div class="flex-row baseline-text">
                     <h3 class="moods__main--title">
@@ -336,6 +343,7 @@
                     </span>
                 </div>
             </div>
+        </section>
 
             <!-- sounds of India -->
             <div class="div__container">
@@ -399,6 +407,7 @@
             </div>
 
             <!-- Latest Hindi Release -->
+            <section id="latest-hindi-release">
             <div class="div__container">
                 <h3 class="main-title latest-hindi-songs__main--title">
                     Latest Hindi Release
@@ -454,8 +463,10 @@
                     </li>
                 </ul>
             </div>
+        </section>
 
             <!-- Latest English -->
+            <section id="latest-english-release">
             <div class="div__container">
                 <h3 class="main-title latest-english-songs__main--title">
                     Latest english Release
@@ -512,54 +523,223 @@
                 </ul>
             </div>
         </section>
+        </section>
     </div>
 
+    <!-- grid area right side part -->
     <div class="container-main-body">
         <section class="container">
             <div class="right-grid-list">
-                <h2 class="right-grid-title">Queue</h2>
                 <!-- dropdown menu here -->
+                <div class="custom-select">
+                    <select name="dropdown" id="dropdown">
+                        <option value="queue"><a href="#queue" class="dropdown-link">Queue</a></option>
+                        <option value="playlists"><a href="#playlists" class="dropdown-link">Playlists</a></option>
+                        <option value="favourite-songs"><a href="#favourites" class="dropdown-link">Favourite Songs</a></option>
+                    </select>
+                    <span class="custom-arrow"></span>
+                </div>
             </div>
 
             <ol class="right-grid-items">
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                01
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                02
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                03
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                04
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                05
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                06
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                07
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                08
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                09
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="right-grid-item">
-                    1
+                    <a href="#" class="right-grid-link">
+                        <div class="right-grid-flex-row">
+                            <div class="numbers">
+                                10
+                            </div>
+                            <div class="right__grid--img-container">
+                                <img src="/images/latest-release/ab67616d0000b2733f3d35703bdcd917dad51c4f.jpeg" alt="Pasoori" class="right__grid--img">
+                            </div>
+                            <div class="flex-column">
+                                <h5>Song Name</h5>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="like-button">
+                                <i class="far fa-light fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
                 </li>
             </ol>
         </section>
@@ -571,18 +751,17 @@
     <footer class="footer">
         <div class="music-container">
             <!-- img of artist along with title -->
-            <div class="img-container">
+            <div class="music-player-img-container">
                 <!-- img of music album -->
-                <img src="" alt="music cover" id="cover">
+                <img src="/images/carousel/tera-hi-rahun.jpg" alt="music cover" id="cover">
+            </div>
+            <div class="div__title">
+                <h4 id="title">Tera Hi Rahun</h4>
+                <i class="fa-regular fa-heart"></i>
             </div>
 
             <div class="music-info">
                 <div class="music-info-flex">
-                    <div class="div__title">
-                        <h4 id="title">Tera Hi Rahun</h4>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-
                     <div class="icons">
                         <!-- GoogleFonts icons -->
                         <button id="shuffle" class="action-btn">

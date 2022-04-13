@@ -86,7 +86,7 @@ body {
 
 /* main styling */
 .main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -115,6 +115,20 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.music-player-img-container {
+    width: 80px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 5px;
+    margin-right: -5%;
+}
+
+.music-player-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .music-info-flex {
