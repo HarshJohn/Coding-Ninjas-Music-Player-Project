@@ -18,8 +18,8 @@ let songs = [
     {songName: "Rabba - Salam-e-Ishq", filePath: "/images/music-player/songs/2.mp3", coverPath: "/images/music-player/covers/6.jpg"},
     {songName: "Sakhiyaan - Salam-e-Ishq", filePath: "/images/music-player/songs/2.mp3", coverPath: "/images/music-player/covers/7.jpg"},
     {songName: "Bhula Dena - Salam-e-Ishq", filePath: "/images/music-player/songs/2.mp3", coverPath: "/images/music-player/covers/8.jpg"},
-    {songName: "Tumhari Kasam - Salam-e-Ishq", filePath: "/images/music-player/songs/2.mp3", coverPath: "/images/music-player/covers/9.jpg"},
-    {songName: "Na Jaana - Salam-e-Ishq", filePath: "/images/music-player/songs/4.mp3", coverPath: "/images/music-player/covers/10.jpg"},
+    {songName: "Tumhari Kasam - Salam-e-Ishq", filePath: "/images/music-player/songs/2.mp3", coverPath: "/images/music-player/covers/8.jpg"},
+    {songName: "Na Jaana - Salam-e-Ishq", filePath: "/images/music-player/songs/8.mp3", coverPath: "/images/music-player/covers/10.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
