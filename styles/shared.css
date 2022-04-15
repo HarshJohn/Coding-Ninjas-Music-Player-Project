@@ -10,6 +10,8 @@
 
     --fw-reg: 400;
     --fw-bold: 700;
+
+    --nav-bg: #03000e;
 }
 
 /* general properties */
@@ -25,7 +27,7 @@ body {
 
 /* header */
     /* navbar */
-.nav {
+/* .nav {
     position: fixed;
     top: 0;
     background-color: black;
@@ -91,7 +93,171 @@ body {
 .nav__profile--img {
     width: 50px;
     border-radius: 50%;
+} */
+
+header {
+    width: 100vw;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #03000e;
+  }
+  
+  nav .logo {
+    color: #fff;
+    text-decoration-color: var(--main-clr);
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+  }
+
+  .brand {
+      margin-left: 10px;
+  }
+
+  .brand-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+  }
+
+  .nav__logo--img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nav__profile--img {
+    width: 50px;
+    border-radius: 50%;
+}
+  
+  nav ul {
+    --padding: 20px;
+    --font-size: 17px;
+  
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size);
+    overflow-y: hidden;
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+  }
+  
+  nav ul li {
+    padding: var(--padding);
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2.5px;
+    border-radius: 99px;
+    background: var(--main-clr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav .menu {
+    width: 22px;
+    height: 16px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px;
+  }
+  
+  nav .menu span {
+    height: 2px;
+    width: 100%;
+    border-radius: 99px;
+    background: #fff;
+    transition: 0.2s ease;
+    transform-origin: left;
+  }
+  
+  nav .menu.active span {
+    background: lightcoral;
+  }
+  
+  nav .menu.active span:nth-child(1) {
+    transform: rotate(40deg);
+  }
+  
+  nav .menu span:nth-child(3) {
+    transform-origin: left;
+  }
+  
+  nav .menu.active span:nth-child(3) {
+    transform: rotate(-40deg);
+  }
+  
+  nav .menu.active span:nth-child(2) {
+    transform: scale(0);
+  }
+  
+  @media (max-width: 992px) {
+    nav {
+        margin-top: 1em;
+    }
+
+    nav .menu {
+      display: flex;
+    }
+  
+    nav ul {
+      --height: 0px;
+  
+      flex-direction: column;
+      background: var(--nav-bg);
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 35px;
+      height: var(--height);
+      transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+  
+    nav ul.active {
+      --height: calc(
+        (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+      );
+      transition: 1s ease;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+    nav ul li a {
+      width: 100%;
+      text-transform: capitalize;
+    }
+  }
+  
+
 
 /* main styling */
 .main {
@@ -207,16 +373,15 @@ body {
 
 .div-container{
     min-height: 72vh;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   margin-left: 23%;
-   margin-top: -5rem;
-   width: 70%;
-   border-radius: 12px;
-   padding: 34px;
+    font-family: var(--ff-varela-round);
+    display: flex;
+    justify-content: center;
+    margin: 23px auto;
+    margin-top: -7rem;
+    width: 100%;
+    padding: 34px;
 }
 
 .bottom{
@@ -224,7 +389,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    height: 130px;
+    height: 110px;
+    width: 100%;
     background-color: black;
     color: white;
     display: flex;
@@ -234,8 +400,9 @@ body {
 }
 
 .icons{
-    margin-top: 14px; 
+    margin-top: 5px; 
 }
+
 .icons i{
     cursor: pointer;
 }
@@ -253,7 +420,6 @@ body {
     height: 50px;
     display: flex;
     background-color: white;
-    
     color: black;
     margin: 12px 0;
     justify-content: space-between;
@@ -278,95 +444,10 @@ body {
 .songInfo{
     position: absolute;
     left: 10vw;
-    font-family: 'Varela Round', sans-serif;
+    font-family: var(--ff-varela-round);
 }
 
 .songInfo img{
     opacity: 0;
     transition: opacity 0.4s ease-in;
-}
-
-/* responsive design */
-
-#header {
-    display: none;
-}
-
-@media (max-width: 600px) {
-    .navbar-brand {
-        display: none;
-    }    
-
-    #header {
-      display: block;
-      background: none;
-      position: absolute;
-      top: 0;
-    }
-    nav {
-      position: absolute;
-      background: rgba(20, 207, 174, 0.8);
-      top: 100%;
-      left: 60vw;
-      border-radius: 2px;
-      box-shadow: var(--bs-secondary);
-      transform: scale(1, 0);
-      transform-origin: top;
-      transition: transform 400ms ease-in-out;
-    }
-  
-    .nav__toggle--label {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-    }
-  
-    .nav__toggle--label span,
-    .nav__toggle--label span::before,
-    .nav__toggle--label span::after {
-      display: block;
-      background-color: var(--bg-clr-black);
-      width: 1.75em;
-      height: 4px;
-      border-radius: 2px;
-      position: relative;
-      cursor: pointer;
-    }
-  
-    .nav__toggle--label span::before,
-    .nav__toggle--label span::after {
-      content: "";
-      position: absolute;
-    }
-  
-    .nav__toggle--label span::before {
-      bottom: 7px;
-    }
-  
-    .nav__toggle--label span::after {
-      top: 7px;
-    }
-  
-    .nav__list {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-    }
-  
-    .nav__link {
-      margin: 0;
-      padding: 0.5em 0.25em;
-      font-family: var(--ff-secondary);
-      opacity: 0;
-      transition: all 250ms ease-in;
-    }
-  
-    .header__button:checked ~ nav {
-      transform: scale(1, 1);
-    }
-  
-    .header__button:checked ~ nav a {
-      opacity: 1;
-      transition: opacity 150ms ease-in-out;
-    }
 }
