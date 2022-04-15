@@ -18,7 +18,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     color: white;
     font-family: var(--ff-ubuntu), var(--ff-varela-round);
     line-height: 1.25;
@@ -27,74 +27,6 @@ body {
 
 /* header */
     /* navbar */
-/* .nav {
-    position: fixed;
-    top: 0;
-    background-color: black;
-    width: 100%;
-    padding: 1.5em;
-    font-family: var(--ff-ubuntu);
-    z-index: 99;
-}
-
-.nav__list--items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.decor-none {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    font-weight: var(--fw-bold);
-}
-
-.nav__list--items span {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav__list--item {
-    margin-inline: 2.5em;
-    list-style: none;
-}
-
-.nav__logo--img {
-    width: 50px;
-}
-
-.search-bar {
-    padding: .55em;
-    border-radius: 5px;
-}
-
-#search-btn {
-    background: transparent;
-    border: none;
-}
-
-.fa-search {
-    padding: .65em;
-    border-radius: 5px;
-}
-
-.nav__profile--img {
-    width: 50px;
-    border-radius: 50%;
-} */
-
 header {
     width: 100vw;
 }
@@ -107,6 +39,8 @@ nav {
     top: 0;
     width: 100%;
     background: #03000e;
+    padding-left: 1em;
+    z-index: 99;
   }
   
   nav .logo {
@@ -118,7 +52,7 @@ nav {
   }
 
   .brand {
-      margin-left: 10px;
+      margin-left: 1em;
   }
 
   .brand-logo {
@@ -220,7 +154,8 @@ nav {
   
   @media (max-width: 992px) {
     nav {
-        margin-top: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     nav .menu {
@@ -276,110 +211,17 @@ nav {
 
 /* footer styling
     music section styling */
-/* .footer {
-    font-family: var(--ff-roboto-mono);
-}
-
-.music-container {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(24, 24, 24);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.music-player-img-container {
-    width: 80px;
-    height: 50px;
-    background-size: cover;
-    border-radius: 5px;
-    margin-right: -5%;
-}
-
-.music-player-img-container img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-
-.music-info-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.music-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.div__title {
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 2em;
-}
-
-.progress-container {
-    margin-top: .25em;
-}
-
-.icons {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.fa,
-.fas {
-    color: white;
-}
-
-.action-btn {
-    margin-inline: 5px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-#myProgressBar {
-    width: 40vw;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-}
-
-.footer__container--volume-controller {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .div-container{
     min-height: 72vh;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(15, 15, 15);
     color: white;
     font-family: var(--ff-varela-round);
     display: flex;
     justify-content: center;
-    margin: 23px auto;
+    margin: 0 auto;
     margin-top: -7rem;
+    margin-bottom: 7rem;
     width: 100%;
     padding: 34px;
 }
@@ -450,4 +292,30 @@ nav {
 .songInfo img{
     opacity: 0;
     transition: opacity 0.4s ease-in;
+}
+
+@media (max-width: 992px) {
+    .icons{
+        margin-top: 60px; 
+    }
+}
+
+@media (max-width: 776px) {
+    .div-container{
+        margin-top: 2rem;
+    }
+
+    .bottom{
+        height: 150px;
+    }
+
+    .icons{
+        margin-top: 65px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .icons{
+        margin-top: 70px; 
+    }
 }

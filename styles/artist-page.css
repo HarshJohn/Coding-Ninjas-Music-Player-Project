@@ -45,11 +45,39 @@
     margin-bottom: 9rem;
 }
 
+@media (max-width: 992px) {
+    .main__grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+}
+
 /* artist profile */
     /* cover image */
 .artist__profile-img {
     width: 90%;
     border-radius: 5px;
+}
+
+@media (max-width: 776px) {
+    .artist__profile-img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    .artist__profile-img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 450px) {
+    .artist__profile-img {
+        width: 65%;
+    }
 }
 
     /* main information */
@@ -58,11 +86,20 @@
     font-size: 3rem;
 }
 
+@media (max-width: 600px) {
+    .left-grid-title {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
         /* popular songs */
 .flex-row {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .flex-column {
@@ -116,6 +153,21 @@
     margin-inline-end: 1em;
 }
 
+@media (max-width: 776px) {
+    .list-item {
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    .img-item {
+        width: 50px;
+    }
+
+    .margin-gap {
+        margin-left: 5em;
+    }
+}
 
 /* right side grid area: similar artists and recently played song list. */
     /* similar artists area */
@@ -145,11 +197,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .similar-artists-img {
     width: 50px;
     margin-inline: 1em;
+}
+
+@media (max-width: 776px) {
+    .list__item--similar-artists {
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .similar-artists-img {
+        width: 30px;
+    }
+
+    .similar-artist-names {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
     /* Recently Player Area */
@@ -188,4 +260,22 @@
 .recently-played-img {
     width: 50px;
     margin-inline: 1em;
+}
+
+@media (max-width: 776px) {
+    .list__item--recently-played {
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .recently-played-img {
+        width: 30px;
+    }
+
+    .recently-played-names {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
